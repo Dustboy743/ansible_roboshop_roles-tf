@@ -1,0 +1,9 @@
+---
+- name: installing "{{ component }}"
+  hosts: "{{ component }}"
+  become: yes
+  # vars_files:
+  #   - vault/mysql.yml   #as storing password in SSM-parameter store
+  roles:
+    - "{{ component }}"
+ 

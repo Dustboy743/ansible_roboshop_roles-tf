@@ -1,0 +1,23 @@
+
+    - name: task1..installing mysql
+      ansible.builtin.package:
+        name: "mysql-server"
+        state: present
+
+    - name: task2..enabling and starting the service
+      ansible.builtin.service:
+        name: mysqld
+        enabled: true
+        state: started    
+
+    - name: installing boto3 and botocore
+      ansible.builtin.pip:
+        name: "{{item}}"
+        executable: pip3.9
+      loop:
+        - boto3
+        - botocore      
+
+    - name: task3..setup root password
+      ansible.builtin.command:
+        cmd: 'mysql_secure_installation --set-root-pass {{ ROOTPASSWORD }}'    
