@@ -1,2 +1,2 @@
-CATALOGUE: "catalogue.jiony.xyz"
-REDIS: "redis.jiony.xyz"
+CATALOGUE: "catalogue.backend-{{env}}.jiony.xyz"
+REDIS: "redis-{{env}}.jiony.xyz"

@@ -15,8 +15,7 @@
     name: all
     login_user: root
     login_password: RoboShop@1
-    login_host: mysql.jiony.xyz
-    state: import
+    login_host: "{{ MYSQL }}"
     target: "{{ item }}"
   loop:
   - /app/db/schema.sql

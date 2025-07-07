@@ -1,2 +1,2 @@
-REDIS: "redis.jiony.xyz"
-MONGODB: "mongodb.jiony.xyz"
+REDIS: "redis-{{ env }}.jiony.xyz"
+MONGODB: "mongodb-{{ env }}.jiony.xyz"

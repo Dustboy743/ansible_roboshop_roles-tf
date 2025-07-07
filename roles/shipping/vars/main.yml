@@ -1,2 +1,2 @@
-CART: cart.jiony.xyz
-MYSQL: mysql.jiony.xyz
+CART: cart.backend-{{env}}.jiony.xyz
+MYSQL: mysql-{{env}}.jiony.xyz
